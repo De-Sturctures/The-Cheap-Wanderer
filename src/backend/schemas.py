@@ -1,9 +1,13 @@
 from pydantic import BaseModel
 
-class TravelRequest(BaseModel):
-    start_date: str
-    end_date: str
-    destination: str
+class UserCreate(BaseModel):
+    username: str
+    password: str
 
-class ChatRequest(BaseModel):
-    message: str
+class UserLogin(BaseModel):
+    username: str
+    password: str
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
