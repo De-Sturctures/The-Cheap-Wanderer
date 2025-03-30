@@ -1,6 +1,4 @@
-rom
-collections
-import deque
+from collections import deque
 
 
 class ChatMemory:
